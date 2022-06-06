@@ -25,7 +25,7 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 let btn = [{
                                 urlButton: {
                                     displayText: `Github`,
-                                    url: `https://github.com/Nakataaard`
+                                    url: `https://github.com/Arullwara`
                                 }
                             }, {
                                 quickReplyButton: {
@@ -94,10 +94,10 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
             if (typeof chats !== 'object') global.db.data.chats[m.chat] = {}
             if (chats) {
                 if (!('mute' in chats)) chats.mute = false
-                if (!('antilink' in chats)) chats.antilink = false
+                if (!('antilink' in chats)) chats.antilink = true
             } else global.db.data.chats[m.chat] = {
                 mute: false,
-                antilink: false,
+                antilink: true,
             }
 		
 	    let setting = global.db.data.settings[botNumber]
@@ -107,7 +107,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
 		if (!('autobio' in setting)) setting.autobio = false
 	    } else global.db.data.settings[botNumber] = {
 		status: 0,
-		autobio: false,
+		autobio: true,
 	    }
 	    
         } catch (err) {
@@ -563,7 +563,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             }
             break
             case 'sc': {
-                reply('Script : https://github.com/Nakataaard/MD2\n\n Dont Forget Give Star\n\nDonate : 6285748894171 (Dana)\nSaweria : https://saweria.co/Nakata\n\n Dont Forget Donate')
+                reply('Script : https://github.com/Arullwara/MD2\n\n Dont Forget Give Star\n\nDonate : 6285748894171 (Dana)\nSaweria : https://saweria.co/Nakata\n\n Dont Forget Donate')
             }
             break
             case 'chat': {
@@ -1154,12 +1154,12 @@ break
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Nakataaard/MD2'
+                                    url: 'https://github.com/Arullwara/MD2'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 857-4889-4171'
+                                    phoneNumber: '+6285822347348'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -1232,12 +1232,12 @@ case 'bcimg': case 'bcvidio': case 'bcaudio': {
 		    let btn = [{
                                 urlButton: {
                                     displayText: 'Source Code',
-                                    url: 'https://github.com/Nakataaard/MD2'
+                                    url: 'https://github.com/Arullwara/MD2'
                                 }
                             }, {
                                 callButton: {
                                     displayText: 'Number Phone Owner',
-                                    phoneNumber: '+62 857-4889-4171'
+                                    phoneNumber: '+6285822347348'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2655,10 +2655,10 @@ case 'donasi':
 tekssa = `Halo @${m.sender.split("@s.whatsapp.net")[0]} 👋
 Berikut adalah list harga untuk sewa bot ini
 *💸Payment💰*
-*•Gopay:* ISI NOMOR LU
-*•Dana:* ISI NOMOR LU
-*•Ovo:* ISI NOMOR LU
-*•Pulsa:* ISI NOMOR LU(Up +5)
+*•Gopay:* 
+*•Dana: '085822347348'
+*•Ovo: ''
+*•Pulsa: '085822347348'
 
 *Note:
 =>Untuk Sewa/Memasukkan Bot Kedalam Group, cukup membayar Rp20.000
@@ -2673,9 +2673,9 @@ break
 ╭─ *Bot Info* ─╮       
 
 Libray : *Baileys Multi Device*
-Name Bot : *NahBotz-MD²*
-Creator : *NakataArdnt*
-Author : *NakataArdnta.*
+Name Bot : *Arullbotz-MD²*
+Creator : *Arullofc*
+Author : *Arullbotzmd.*
 User Total : *${Object.keys(global.db.data.users).length}*
  
 ╰─────────╯
@@ -2990,7 +2990,7 @@ User Total : *${Object.keys(global.db.data.users).length}*
                 let btn = [{
                                 urlButton: {
                                     displayText: 'S C R I P T',
-                                    url: 'https://github.com/Nakataaard/MD2'
+                                    url: 'https://github.com/Arullwara/MD2'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -3148,7 +3148,7 @@ let sectionnya= [{
 						]
 hisoka.sendList(m.chat, `Halo ${pushname}`, `───❑ INFO BOT
 
-LIBRAY:  *NahBotz  MD*`, "Nakataa", "List Bor ", sectionnya, { quoted: m})
+LIBRAY:  *ArullBotz  MD*`, "ArullOfc", "List Bor ", sectionnya, { quoted: m})
 break
 case 'grupmenu': {
 	            anu = `
